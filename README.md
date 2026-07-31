@@ -21,6 +21,32 @@ https://coderida06.github.io/GuitAir/
 *  Instant chord playback
 *  Simple gesture-based controls
 
+
+
+## Songs you can play and sing along with GuitAir
+
+* Count on me- Bruno Mars
+* Girls like you- Maroon 5
+* 500 miles- Peter, Paul and Mary
+* TV- Billie Eilish
+* Night we met- Lord Huron
+* Snowman- Sia
+* I want it that way- Backstreet Boys
+
+*...and many more! These are just the ones I've personally tried with GuitAir.
+
+
+
+## Chords & Lyrics
+
+I use Ultimate Guitar for chord sheets while playing with GuitAir:
+
+https://tabs.ultimate-guitar.com/tab/bruno-mars/count-on-me-chords-958496
+
+Honestly, this website is goated.
+
+
+
 ## Coming Soon
 
 *  Upstrums
