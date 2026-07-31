@@ -10,7 +10,8 @@ GuitAir is an OpenCV-based application that lets you play guitar chords using ha
 
 ## Guide
 
-Coming soon
+
+https://coderida06.github.io/GuitAir/
 
 
 ## Current Features
