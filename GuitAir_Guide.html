@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GuitAir Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep: #0b1740;
+    --navy: #12215c;
+    --navy-light: #1c2f7a;
+    --mint: #5eead4;
+    --lavender: #b4a7ff;
+    --text-soft: rgba(255,255,255,0.72);
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at 15% 10%, rgba(180,167,255,0.16), transparent 40%),
+      radial-gradient(circle at 85% 15%, rgba(94,234,212,0.14), transparent 45%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, var(--navy-deep) 100%);
+    font-family: 'Sora', sans-serif;
+    color:white;
+    padding-bottom: 60px;
+  }
+
+  header{
+    padding: 50px 20px 20px;
+    text-align:center;
+  }
+
+  .logo{
+    display:block;
+    width:120px;
+    margin:0 auto 18px;
+    filter: drop-shadow(0 0 18px rgba(94,234,212,0.35));
+  }
+
+  h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(36px, 6vw, 58px);
+    margin: 0;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ffffff 0%, var(--mint) 60%, var(--lavender) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .subtitle{
+    text-align:center;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-soft);
+    letter-spacing: 0.5px;
+    margin: 14px 0 0;
+    text-transform: uppercase;
+  }
+
+  .divider{
+    width: 70px;
+    height: 3px;
+    margin: 22px auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--mint), var(--lavender));
+  }
+
+  .grid{
+    width: 92%;
+    max-width: 1100px;
+    margin: 50px auto 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:28px;
+  }
+
+  .card{
+    position: relative;
+    background: linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 26px 20px 22px;
+    text-align:center;
+    backdrop-filter: blur(6px);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+  }
+
+  .card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(160deg, rgba(94,234,212,0.10), rgba(180,167,255,0.06));
+    opacity:0;
+    transition: opacity 0.25s ease;
+  }
+
+  .card:hover{
+    transform: translateY(-6px);
+    border-color: rgba(94,234,212,0.4);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.35), 0 0 24px rgba(94,234,212,0.12);
+  }
+
+  .card:hover::before{
+    opacity:1;
+  }
+
+  .card h2{
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 16px;
+    color: var(--mint);
+    letter-spacing: 1px;
+  }
+
+  .img-frame{
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .card img{
+    width:100%;
+    display:block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover img{
+    transform: scale(1.05);
+  }
+
+  footer{
+    text-align:center;
+    margin-top: 60px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 480px){
+    .grid{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .card{
+      padding: 18px 12px 16px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="guitairlogo.png" class="logo" alt="GuitAir Logo">
+  <h1>GuitAir Guide</h1>
+  <p class="subtitle">Match your hand to the gesture below</p>
+  <div class="divider"></div>
+</header>
+
+<div class="grid">
+  <div class="card">
+    <h2>Am</h2>
+    <div class="img-frame"><img src="chords/Am.jpg" alt="Am"></div>
+  </div>
+  <div class="card">
+    <h2>C</h2>
+    <div class="img-frame"><img src="chords/C.jpg" alt="C"></div>
+  </div>
+  <div class="card">
+    <h2>D</h2>
+    <div class="img-frame"><img src="chords/D.jpg" alt="D"></div>
+  </div>
+  <div class="card">
+    <h2>Em</h2>
+    <div class="img-frame"><img src="chords/Em.jpg" alt="Em"></div>
+  </div>
+  <div class="card">
+    <h2>F</h2>
+    <div class="img-frame"><img src="chords/F.jpg" alt="F"></div>
+  </div>
+  <div class="card">
+    <h2>G</h2>
+    <div class="img-frame"><img src="chords/G.jpg" alt="G"></div>
+  </div>
+  <div class="card">
+    <h2>B</h2>
+    <div class="img-frame"><img src="chords/B.jpg" alt="B"></div>
+  </div>
+  <div class="card">
+    <h2>Bm</h2>
+    <div class="img-frame"><img src="chords/Bm.jpg" alt="Bm"></div>
+  </div>
+  <div class="card">
+    <h2>Dm</h2>
+    <div class="img-frame"><img src="chords/Dm.jpg" alt="Dm"></div>
+  </div>
+  <div class="card">
+    <h2>E</h2>
+    <div class="img-frame"><img src="chords/E.jpg" alt="E"></div>
+  </div>
+</div>
+
+<footer>GuitAir · learn the shapes, play the sound</footer>
+
+</body>
+</html>
