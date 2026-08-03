@@ -1,6 +1,6 @@
 # GuitAir
 
-A few years ago, I picked up the guitar. I learned to play quite a few songs—but only through tabs. Chords were a different story. My fingertips hated me, and I never had the time or patience to properly learn them. (I can play an E minor though.)
+A few years ago, I picked up the guitar. I learned to play quite a few songs, but only the tabs. Chords were a different story. My fingertips hated me, and I never had the time or patience to properly learn them. (I can play an E minor though.)
 
 So I built **GuitAir**.
 
